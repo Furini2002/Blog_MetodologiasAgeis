@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Métodos Ágeis</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Unbounded:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Link css e java script -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="caminho/do/seu/arquivo.js"></script>
+
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elementos = document.querySelectorAll(".anime-span");
+
+      function verificarVisibilidade() {
+        elementos.forEach(function (elemento) {
+          var posicao = elemento.getBoundingClientRect().top;
+          if (posicao < window.innerHeight) {
+            elemento.classList.add("animated");
+          }
+        });
+      }
+
+      // Verifique a visibilidade inicial
+      verificarVisibilidade();
+
+      // Adicione um ouvinte de rolagem para verificar a visibilidade ao rolar
+      window.addEventListener("scroll", verificarVisibilidade);
+    });
+  </script>
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-light" style="background-color: #0D0D0D">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1 style="color:aliceblue; font-family: 'Unbounded', sans-seri;">GFR</h1>
+      </a>
+    </div>
+  </nav>
+
+
+  <!--Inicio do conteudo-->
+
+  <!--Titulo-->
+  <header>
+    <div class="container-fluid" style="position: relative;">
+      <div class="row">
+        <div class="col-12" style="background-image: url(img/gradient.png); position: relative; z-index: 1;">
+          <br><br><br><br><br><br><br>
+        </div>
+      </div>
+      <div class="container"
+        style="position: absolute; top: 50px; left: 0; right: 0; z-index: 2; background-color: #0D0D0D">
+        <br><br><br><br>
+        <h1 class="display-1 fst-italic text-light">Desvendando o Scrum e FDD</h1>
+        <h5 class="display-7 text-light">As Chaves para o Sucesso em Métodos Ágeis.</h5>
+        <br><br>
+      </div>
+    </div>
+    </div>
+    <br>
+  </header>
+  <br><br><br><br><br><br>
+
+  <main class="container">
+
+    <div class="row g-5">
+
+      <div class="col-md-8">
+        <!--Imagem-->
+        <div class="container container-with-image">
+          <img src="img/card-2.png" class="img-fluid width: 100%" alt="Imagem">
+        </div><br>
+
+        <!--Conteudo-->
+        <article class="blog-post">
+          <!--Titulo 1-->
+          <div>
+            <a id="introducao"></a>
+            <h1 id="intrdução">INTRODUÇÃO</h1>
+            <br>
+          </div>
+          <div class="conteudos">
+            <p>Imagine que você faz parte de um time ágil, um <span class="marcado anime-span anime-span">grupo de
+                super-heróis</span> do
+              desenvolvimento de software. Eles
+              não usam capas ou voam, mas têm uma habilidade incrível: entregam projetos incríveis de alta qualidade
+              mais rápido que o <span class="marcado anime-span">Flash</span> em uma maratona!</p>
+            <p><span class="marcado anime-span">Mas o que diabos é "método ágil"?</span> Essa abordagem é tipo um <span
+                class="marcado anime-span">GPS</span> que guia os desenvolvedores para a
+              criação de produtos top de linha. A ideia é criar versões preliminares do projeto em curtos intervalos de
+              tempo, aproximando o cliente do processo de criação.</p>
+            <p>Agora, por que isso é tão revolucionário? Bom, na era dos primórdios da computação, um grupo de gênios se
+              juntou para repensar como criar softwares de uma maneira mais humana. Desse encontro surgiu o "Manifesto
+              Ágil", um documento que mudou para sempre a forma de pensar sobre desenvolvimento de software.</p>
+            <p>Métodos ágeis são como aquele feitiço de transformação do <span class="marcado anime-span">Harry
+                Potter:</span> eles
+              transformam o trabalho das
+              equipes, <span class="marcado anime-span">garantindo velocidade nas entregas, qualidade top de linha,
+                autonomia das
+                equipes e soluções
+                personalizadas.</span> Agora, bora mergulhar nos dois gigantes da agilidade: o Scrum e o FDD
+              (Feature-Driven
+              Development).</p>
+          </div>
+
+          <!--Titulo 2-->
+          <div>
+            <a id="scrum"></a>
+            <h1 id="scrum">O QUE É O SCRUM?</h1>
+            <br>
+          </div>
+
+          <!--Imagem-->
+          <div class="container container-with-image">
+            <img src="img/scrum.jpg" class="img-fluid " alt="Imagem">
+          </div><br>
+
+          <div class="conteudos">
+            <p>Pense no Scrum como a <span class="marcado anime-span">organização de um time de futebol,</span> mas para
+              criar
+              software. Ele tem três posições
+              principais:</p>
+            <ul>
+              <li><b>Product Owner:</b> é como o <span class="marcado anime-span">capitão do time,</span> representando
+                os
+                interesses do cliente e gerenciando o
+                que precisa ser feito.
+              </li>
+              <li><b>Scrum Master:</b> é tipo o <span class="marcado anime-span">técnico,</span> ajudando o time a
+                entender o jogo
+                e removendo obstáculos.</li>
+              <li><b>Equipe de Desenvolvimento:</b> são os <span class="marcado anime-span">jogadores</span> que marcam
+                os gols,
+                construindo o produto.</li>
+            </ul>
+            <p>O Scrum é como uma partida de futebol com vários tempos:
+            </p>
+            <ul>
+              <li><b>Sprint:</b> cada Sprint é como um <span class="marcado anime-span">tempo de jogo,</span> geralmente
+                de 2 a 4
+                semanas, onde o time foca na
+                construção de um pedaço do produto.
+              </li>
+              <li><b>Reuniões diárias:</b> são como os <span class="marcado anime-span">treinos,</span> ajudando o time
+                a se
+                coordenar.
+              </li>
+              <li><b>Revisão e Retrospectiva:</b> são como as <span class="marcado anime-span">análises do jogo,
+                </span>onde o time
+                aprende e melhora.</li>
+            </ul>
+          </div>
+
+          <!--Titulo 2.1-->
+          <div>
+            <a id="modeloScrum"></a>
+            <h2 id="modeloScrum">MODELO HIPOTÉTICO DO SCRUM</h2>
+            <br>
+          </div>
+
+          <div class="conteudos">
+            <p>Imagine que você e sua equipe estão <span class="marcado anime-span">desenvolvendo um aplicativo de
+                entrega de
+                comida.</span> Cada Sprint é como
+              um período de duas semanas em que você se concentra em construir funcionalidades específicas, como
+              cadastro de restaurantes, seleção de pratos, pagamento e avaliações. <span class="marcado anime-span">O
+                Product
+                Owner</span> (representando os
+              clientes famintos) define as prioridades para cada Sprint, enquanto o <span
+                class="marcado anime-span">Scrum Master
+                (seu técnico)</span> ajuda a
+              eliminar os obstáculos, como problemas técnicos ou requisitos não claros.</p>
+          </div>
+
+          <!--Titulo 3-->
+          <div>
+            <a id="fdd"></a>
+            <h1 id="fdd">O QUE É O FDD?</h1>
+            <br>
+          </div>
+
+          <!--Imagem-->
+          <div class="container container-with-image">
+            <img src="img/fdd.jpg" class="img-fluid " alt="Imagem">
+          </div><br>
+
+          <div class="conteudos">
+            <p>Agora, pense no FDD como a <span class="marcado anime-span">construção de um Lego.</span> Ele começa
+              identificando
+              peças-chave para montar uma
+              história completa.</p>
+            <h4>Componentes do FDD:</h4>
+            <ul>
+              <li><b>Features (Recursos):</b> Imagine as features como os blocos de Lego individuais. Cada uma é uma
+                <span class="marcado anime-span">funcionalidade independente do software,</span> como registro de
+                usuários,
+                pesquisa de restaurantes ou pedido
+                de comida.
+              </li>
+              <li><b>Design by Feature (Design por Recurso):</b> <span class="marcado anime-span">sta etapa é como
+                  seguir as
+                  instruções detalhadas do
+                  manual de montagem dos Legos.</span>E Cada feature é modelada e projetada cuidadosamente, incluindo
+                interface do
+                usuário, estrutura de dados e regras de negócios.</li>
+              <li><b>Inspeção Regular (Regular Inspections):</b> <span class="marcado anime-span">É como verificar se
+                  cada bloco de
+                  Lego encaixa
+                  perfeitamente no seu projeto.</span> Uma equipe de inspeção revisa o código e o design para garantir
+                que tudo
+                esteja em conformidade com os padrões estabelecidos.
+              </li>
+              <li><b>Integração Contínua (Continuous Integration):</b> É como encaixar cada bloco de Lego no conjunto
+                principal enquanto você constrói. <span class="marcado anime-span">A integração contínua envolve a fusão
+                  regular do
+                  código de diferentes
+                  funcionalidades no repositório principal</span> para testar a integração e identificar problemas
+                precocemente.
+              </li>
+              <li><b>Propriedade Coletiva (Collective Ownership):</b> Imagine que toda a equipe é como um grande time de
+                construção de Lego. <span class="marcado anime-span">Todos compartilham a responsabilidade</span> pelo
+                sucesso do
+                projeto e trabalham juntos
+                para alcançar os objetivos. Desenvolvedores, Testadores e Clientes desempenham um papel crucial na
+                validação dos recursos entregues.
+              </li>
+            </ul>
+          </div>
+
+          <!--Titulo 3.1-->
+          <div>
+            <a id="modeloFdd"></a>
+            <h2 id="modeloFdd">MODELO HIPOTÉTICO DO FDD</h2>
+            <br>
+          </div>
+
+          <div class="conteudos">
+            <p>Imagine que você está desenvolvendo um <span class="marcado anime-span">sistema de gerenciamento de
+                pedidos de
+                comida.</span> Você começa
+              identificando recursos-chave, como <span class="marcado anime-span">"Registro de Usuários"</span> e <span
+                class="marcado anime-span">Seleção de Pratos".</span>" Cada recurso é modelado em detalhes, incluindo
+              como os
+              usuários se inscrevem e como podem escolher pratos. À medida que cada
+              recurso é concluído, <span class="marcado anime-span">uma equipe de inspeção verifica se tudo está
+                perfeito</span>, e
+              então, esses recursos são <span class="marcado anime-span">integrados no sistema.</span></p>
+          </div>
+
+          <!--Titulo 4-->
+          <div>
+            <a id="ScrumVsFdd"></a>
+            <h1 id="ScrumVsFdd">SCRUM X FDD</h1>
+            <br>
+          </div>
+
+          <!--Imagem-->
+          <div class="container container-with-image">
+            <img src="img/scrumvsfdd.jpg" class="img-fluid " alt="Imagem">
+          </div><br>
+
+          <div class="conteudos">
+            <p>O <b>Scrum</b> e o <b>FDD</b> são tipo Batman e Superman: diferentes,<span class="marcado anime-span">mas
+                ambos
+                salvam o dia.</span> O Scrum é
+              como um <span class="marcado anime-span">jogo de futebol,</span> com papéis definidos e sprints como
+              tempos de jogo,
+              enquanto o FDD é como <span class="marcado anime-span">montar um quebra-cabeça,</span> com foco em
+              recursos
+              independentes.</p>
+            <h4>Divergências:</h4>
+            <ul>
+              <li><b>Estrutura e Papéis:</b> O Scrum possui papéis <span class="marcado anime-span">definidos,</span>
+                enquanto o
+                FDD é mais <span class="marcado anime-span">flexível.</span>
+              </li>
+              <li><b>Modelagem Detalhada vs Planejamento por Recurso:</b> O FDD enfatiza a <span
+                  class="marcado anime-span">modelagem detalhada,</span> enquanto o Scrum se concentra no <span
+                  class="marcado anime-span">planejamento por sprint.</span>
+              </li>
+              <li><b>Reuniões vs Inspeções:</b> O Scrum usa mais <span class="marcado anime-span">reuniões
+                  regulares,</span>
+                enquanto o FDD destaca <span class="marcado anime-span">inspeções.</span>
+              </li>
+            </ul>
+            <h4>Convergências:</h4>
+            <ul>
+              <li>Ambos se concentram na <span class="marcado anime-span">entrega incremental.</span></li>
+              <li>Colaboração <span class="marcado anime-span">próxima</span> com os clientes.</li>
+              <li>Flexibilidade para se <span class="marcado anime-span">adaptar a mudanças</span> nos requisitos.</li>
+            </ul>
+          </div>
+
+          <!--Titulo 4-->
+          <div>
+            <a id="conclusao"></a>
+            <h1 id="conclusao">CONCLUSÃO</h1>
+            <br>
+          </div>
+
+          <!--Imagem-->
+          <div class="container container-with-image">
+            <img src="img/conclusão.jpg" class="img-fluid " alt="Imagem">
+          </div><br>
+
+          <div class="conteudo">
+            <p><span class="marcado anime-span"></span>Ambos são ótimos, mas é como <span
+                class="marcado anime-span">escolher entre
+                superpoderes diferentes:</span> o Scrum oferece mais <span class="marcado anime-span">estrutura</span> e
+              planejamento, enquanto o FDD se destaca na <span class="marcado anime-span"></span>construção detalhada de
+              funcionalidades.</p>
+            <p>No final das contas, <span class="marcado anime-span">é escolher o seu herói preferido para salvar o
+                dia!</span>
+              Ambos são incríveis e vão te ajudar a construir projetos épicos. Então, pronto para começar a sua<span
+                class="marcado anime-span"> aventura ágil?</span></p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 4rem;">
+          <div class="p-4">
+            <h4 class="fst-italic">Navegação Rápida</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#scrum">O que é o SCRUM?</a></li>
+              <li><a href="#fdd">O que é FDD?</a></li>
+              <li><a href="#ScrumVsFdd">Scrum vs FDD</a></li>
+              <li><a href="#conclusao">Conclusão</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+
+      <a
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="img/logoIFPR.png" width="60" height="52" alt="logo IFPR" href="#">
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Voltar para o topo</a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+
+</html>
